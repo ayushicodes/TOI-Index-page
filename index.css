@@ -1,0 +1,90 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+  grid-template-rows: 30px 60px 15px auto auto
+}
+.main div{
+    border: 1px solid black;
+}
+
+.header{
+    grid-column:1/-1 ;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #1a1a1a;
+    border-bottom: #2b2a2a;
+
+ 
+}
+.header div {
+    border: none
+}
+.header .language{
+    align-self: center;
+    font-size: 12px;
+    margin-left:60px ;
+}
+.header .advertise{
+    align-self: center;
+    background-image: linear-gradient(to right, rgb(58, 58, 226), rgb(204, 45, 72));
+    font-size: 12px;
+    padding: 2px;
+     margin: 2px;
+     border-radius: 2px;
+     position: relative;
+     left: 320px;
+    
+   
+}
+.header .advertise span i{
+    color: yellow;
+    padding-right: 5px;
+    font-size: 16px;
+}
+.header .icons{
+    align-self: center;
+    margin-right: 60px;
+    
+
+   
+}
+.header .icons span{
+      padding: 2px;
+    color:#313131;
+    font-size: 12px;
+      
+}
+.header .icons .signin_icon{
+    color: white;
+    font-weight: 700;
+}
+.header .icons span i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.header_2{
+    grid-column: 1/-1;
+}
+.header_3{
+    grid-column: 1/-1;
+}
+.footer{
+    grid-column:1/-1 ;
+}
+
+@media (max-width:600px){
+
+    .main{
+        width: 1345px;
+    }
+}
